@@ -39,19 +39,19 @@ form.addEventListener("submit",(e) =>{
         element.lastElementChild.innerHTML = "";
       })
 
-    if (nombres.ariaValueMax.length <=1 || nombres.ariaValueMax.trim() == "" ){
+    if (nombres.value.length <=1 || nombres.value.trim() == "" ){
    mostrarMensajeError("myName","Nombres no Validos");
     }
-    if (apellidos.ariaValueMax.length <=1 || apellidos.ariaValueMax.trim() == "" ){
+    if (apellidos.value.length <=1 || apellidos.value.trim() == "" ){
         mostrarMensajeError("aurName","Apellidos no Validos");
      }
-     if (eMail.ariaValueMax.length <=1 || eMail.ariaValueMax.trim() == "" ){
+     if (eMail.value.length <=1 || eMail.value.trim() == "" ){
         mostrarMensajeError("eMail","Mail no Valido");
      }
-     if (celular.ariaValueMax.length <=1 || celular.ariaValueMax.trim() == "" ){
+     if (celular.value.length <=1 || celular.value.trim() == ""|| isNaN(celular.value) ){
         mostrarMensajeError("mobile","Celular no Validos");
      }
-     if (textarea.ariaValueMax.length <=1 || textarea.ariaValueMax.trim() == "" ){
+     if (textarea.value.length <=1 || textarea.value.trim() == "" ){
         mostrarMensajeError("textarea","Contenido no Validos");
      }
   
