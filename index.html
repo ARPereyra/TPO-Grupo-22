@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>One Page Website</title>
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js"></script>
+  
   <script src="https://kit.fontawesome.com/e03622c599.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -36,17 +36,9 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42347.98198042287!2d-58.76083420758553!3d-35.12571191232419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd227d6f6c69cd%3A0xad2c429fbeaf4c75!2sClub%20de%20Planeadores%20Ca%C3%B1uelas!5e0!3m2!1ses!2sar!4v1682820528331!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
-<section id="Contacto">
-  <h1>Contacto</h1>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates sequi nostrum inventore incidunt enim facere. Maxime numquam, fuga ipsam a voluptate quisquam sit, fugiat enim sunt temporibus expedita optio.</p>
-  <div class="Informacion de contacto"> 
-<h3>Mas Informacion</h3>
-<ul>
-  <li><i class="fa-solid fa-envelope"></i>info@info.com</li>
-  <li><i class="fa-solid fa-phone"></i>+54-911-4047-3293</li>
-  <li><i class="fa-solid fa-map-marker"></i>Direccion 1, CABA</li>
-</ul>
-  </div>
+
+
+  <!--
   <div class="FormularioContacto">
   <form class="Formulario" action="submit-form.php" method="post">
     <div class="GrupoDatosFormulario">
@@ -70,5 +62,68 @@
     </div>
   </div>
   </form>
+
+-->
+<section id="Contacto">
+  <h1>Contacto</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates sequi nostrum inventore incidunt enim facere. Maxime numquam, fuga ipsam a voluptate quisquam sit, fugiat enim sunt temporibus expedita optio.</p>
+ <!--
+  <div class="Informacion de contacto"> 
+<h3>Mas Informacion</h3>
+<ul>
+  <li><i class="fa-solid fa-envelope"></i>info@info.com</li>
+  <li><i class="fa-solid fa-phone"></i>+54-911-4047-3293</li>
+  <li><i class="fa-solid fa-map-marker"></i>Direccion 1, CABA</li>
+</ul>
+  </div>
+
+-->
+
+<div class="container">
+  <form action="" class="form">
+      <p class="form-titulo">Formulario de Contacto </p>
+      <br>
+      <div class="form-input myName">
+          <input type="text" id="myName">
+          <label for="myName">Nombres</label>
+          <p class="mensajeError"></p>
+        
+      </div>
+      <br>
+      <div class="form-input surName">
+        
+          <input type="text" id="surName">
+          <label for="surName">Apellidos</label>
+          <p class="mensajeError"></p>
+      </div>
+      <br>
+      <div class="form-input eMail">
+          
+          <input type="mail" id="eMail">
+          <label for="eMail">Mail</label>
+          <p class="mensajeError"></p>
+      </div>
+      <br>
+      <div class="form-input mobile">
+         
+          <input type="text" id="mobile">
+          <label for="mobile">Celular</label>
+          <p class="mensajeError"></p>
+      </div>
+      <br>
+      <div class="form-input textarea">
+          <textarea   name="textarea"class="textarea" id="textarea"   >Escribenos tu Consulta</textarea>
+          <p class="mensajeError"></p>
+      </div>
+      <br>
+      <div class="form-boton">
+          <input type="submit" value="Enviar">
+      </div>
+      <p class="mensajeCorrecto"></p>
+  
+  </form>
+
+
 </div>
+<script src="/js/index.js"></script>
 <section>
