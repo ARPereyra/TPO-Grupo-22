@@ -24,6 +24,7 @@ function verificar() {
 		return false;
 	}
 }*/
+alert(hola);
 const nombres = document.getElementById("myName");
 const apellidos = document.getElementById("surName");
 const eMail = document.getElementById("eMail");
@@ -37,7 +38,7 @@ form.addEventListener("submit",(e) =>{
 
     listInput.forEach((element) => {
         element.lastElementChild.innerHTML = "";
-      })
+      });
 
     if (nombres.value.length <=1 || nombres.value.trim() == "" ){
    mostrarMensajeError("myName","Nombres no Validos");
@@ -48,7 +49,7 @@ form.addEventListener("submit",(e) =>{
      if (eMail.value.length <=1 || eMail.value.trim() == "" ){
         mostrarMensajeError("eMail","Mail no Valido");
      }
-     if (celular.value.length <=1 || celular.value.trim() == ""|| isNaN(celular.value) ){
+     if (celular.value.length !=10 || celular.value.trim() == ""|| isNaN(celular.value) ){
         mostrarMensajeError("mobile","Celular no Validos");
      }
      if (textarea.value.length <=1 || textarea.value.trim() == "" ){
