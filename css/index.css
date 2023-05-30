@@ -154,6 +154,7 @@ nav a {
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
+  
   }
 section {
   height: 100vh;
@@ -167,12 +168,21 @@ h1 {
   font-size: 48px;
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: flash; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 4s; /* don't forget to set a duration! */
+
   }
 p {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 24px;
   margin-bottom: 40px;
   max-width: 800px;
+
+  
+   
   }
 body {
   margin: 0;
