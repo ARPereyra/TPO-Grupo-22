@@ -105,6 +105,39 @@
 }
 */
 
+
+
+#container{
+    /*width: min(100%, 1000px);*/
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    }
+  
+    
+
+  .card{
+    width: 230px;
+    margin-top: 100px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card span{
+    color: #6e6e6e;
+    font-weight: 500;
+  }
+
+
 nav {
   position: fixed;
   top: 0 ;

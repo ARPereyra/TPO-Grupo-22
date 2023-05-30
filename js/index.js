@@ -26,6 +26,26 @@ function verificar() {
 }
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var accessKey = 'CA7JZphjiTw3U9ciIQrxI1IykxrNfZ3SLO7bLglaDhU';
+    var apiUrl = 'https://api.unsplash.com/photos/random?client_id=' + accessKey;
+    
+    fetch(apiUrl)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        var imageUrl = data.urls.regular;
+        var photographer = data.user.name;
+        
+        document.getElementById('image').src = imageUrl;
+        document.getElementById('photographer').textContent = photographer;
+      })
+      .catch(function(error) {
+        console.log('Error:', error);
+      });
+  });
+
 
 /*
 const nombres = document.getElementById("myName");
