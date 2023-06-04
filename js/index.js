@@ -23,6 +23,7 @@ function verificar() {
 		alert("Por favor, ingrese su correo electrónico.");
 		return false;
 	}
+<<<<<<< HEAD
 }
 
 
@@ -48,6 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /*
+=======
+}*/
+alert(hola);
+>>>>>>> 26acc675839e348eb9370d55e9c1bc4774d12ca0
 const nombres = document.getElementById("myName");
 const apellidos = document.getElementById("surName");
 const eMail = document.getElementById("eMail");
